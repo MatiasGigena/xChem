@@ -66,7 +66,7 @@ body {
   --angle: 0deg;
   padding: 20px;
   background: linear-gradient(white, white) padding-box,
-    conic-gradient(from var(--angle), #dfdfdf, #30d5c8)
+    conic-gradient(from var(--angle), #dfdfdf, #20265c)
       border-box;
   border: 2px solid transparent;
   border-radius: 16px;
@@ -90,40 +90,41 @@ body {
   height: 380px;
   border-radius: 50%;
   animation: rotate 10s linear infinite;
+  opacity: 0.5;
 }
 
 .circle {
   background: conic-gradient(
-    #30d5c8,
-    #ffc324,
-    #ff7f50,
-    #30d5c8
+    #20265c,
+    #e5564c,
+    #2a8eab,
+    #20265c
   );
   filter: blur(32px);
 }
 
 .circle2 {
   background: conic-gradient(
-    #30d5c8,
-    #ffc324,
-    #ff7f50,
-    #30d5c8
+    #20265c,
+    #e5564c,
+    #2a8eab,
+    #20265c
   );
   filter: blur(16px);
 }
 
 .circle3 {
   background: conic-gradient(
-    #30d5c8,
-    #ffc324,
-    #ff7f50,
-    #30d5c8
+    #20265c,
+    #e5564c,
+    #2a8eab,
+    #20265c
   );
   filter: blur(64px);
 }
 @media screen and (max-width: 768px) {
   .carder {
-    border: 1px solid #30d5c8;
+    border: 1px solid #20265c;
   }
   .circle,
   .circle2,
@@ -143,10 +144,10 @@ body {
 
 .conic-gradient {
   background: conic-gradient(
-    #30d5c8,
-    #ffc324,
-    #ff7f50,
-    #30d5c8
+    #20265c,
+    #e5564c,
+    #2a8eab,
+    #20265c
   );
 }
 
@@ -205,17 +206,17 @@ body {
 }
 
 .animacionInferior {
-  animation: fade-inBottom 3s ease-in-out;
+  animation: fade-inBottom 2s ease-in-out;
 }
 .animacionInferiorTexto {
-  animation: fade-inBottom 4s ease-in-out;
+  animation: fade-inBottom 3s ease-in-out;
 }
 .animacionSuperiorTexto {
-  animation: fade-inTop 4s ease-in-out;
+  animation: fade-inTop 3s ease-in-out;
 }
 .animacionCirculo {
-  animation: fade-in 2s ease-in-out;
+  animation: fade-in 1s ease-in-out;
 }
 .animacionBotones {
-  animation: fade-inButtons 4s ease-in-out;
+  animation: fade-inButtons 3s ease-in-out;
 }

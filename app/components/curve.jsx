@@ -29,7 +29,7 @@ const CurveComponent = () => {
     },
   };
   return (
-    <svg className='absolute top-0 left-[-99px] w-[100px] h-full fill-[#ffc324] stroke-none'>
+    <svg className='absolute top-0 left-[-99px] w-[100px] h-full fill-[#20265c] stroke-none'>
       <motion.path
         variants={curve}
         initial='initial'

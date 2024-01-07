@@ -10,7 +10,7 @@ const Carrousel = () => {
           <React.Fragment key={i}>
             <div className={style.slide}>
               <img
-                src='./logoswhite/logo1.png'
+                src='./images/logoheader.png'
                 alt='logo'
               />
             </div>
@@ -23,7 +23,7 @@ const Carrousel = () => {
             </div>
             <div className={style.slide}>
               <img
-                src='./logoswhite/logo1.png'
+                src='./images/logoheader.png'
                 alt='logo'
               />
             </div>
@@ -36,7 +36,7 @@ const Carrousel = () => {
             </div>
             <div className={style.slide}>
               <img
-                src='./logoswhite/logo1.png'
+                src='./images/logoheader.png'
                 alt='logo'
               />
             </div>
@@ -49,7 +49,7 @@ const Carrousel = () => {
             </div>
             <div className={style.slide}>
               <img
-                src='./logoswhite/logo1.png'
+                src='./images/logoheader.png'
                 alt='logo'
               />
             </div>

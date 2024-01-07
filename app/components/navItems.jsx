@@ -29,10 +29,10 @@ const NavItems = () => {
       animate='enter'
       exit='exit'
       initial='initial'
-      className='h-screen w-full lg:w-auto bg-gradient-to-r from-[#ffc324] to-[#ff7f50] fixed top-0 right-0  text-white '
+      className='h-screen w-full lg:w-[470px] bg-gradient-to-r from-[#20265c]  to-[#e5564c] fixed top-0 right-0  text-white '
     >
-      <div className='box-border h-full p-[20%] lg:p-[100px] flex flex-col  '>
-        <div className='flex h-full flex-col justify-start gap-[12px] text-[56px] mt-[80px]'>
+      <div className='box-border h-full  py-[20%] lg:py-[100px] justify-center items-center flex flex-col  '>
+        <div className='flex h-full flex-col justify-start gap-[20px] text-[56px] mt-[80px]'>
           <div className='header mb-[40px]'>
             <p className='text-white text-2xl '>
               Navigation
