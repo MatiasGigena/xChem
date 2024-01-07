@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --timing: 400ms;
+  --rotation: 20deg;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #f9fafa;
+}
+
+.burger {
+  width: 100%;
+}
+
+.burger::after,
+.burger::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.burger::after {
+  top: -5px;
+}
+
+.burger::before {
+  top: 5px;
+}
+
+.burgerActive::after {
+  transform: rotate(45deg);
+  top: -1px;
+}
+
+.burgerActive::before {
+  transform: rotate(-45deg);
+  top: 0px;
+}
+
+.header {
+  color: rgb(153, 153, 153);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-bottom: 40px;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
+.carder {
+  --angle: 0deg;
+  padding: 20px;
+  background: linear-gradient(white, white) padding-box,
+    conic-gradient(from var(--angle), #dfdfdf, #30d5c8)
+      border-box;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  max-width: 400px;
+  animation: rotate-gradient 3s infinite linear;
+}
+
+@keyframes rotate-gradient {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+.circle,
+.circle2,
+.circle3 {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  animation: rotate 10s linear infinite;
+}
+
+.circle {
+  background: conic-gradient(
+    #30d5c8,
+    #ffc324,
+    #ff7f50,
+    #30d5c8
+  );
+  filter: blur(32px);
+}
+
+.circle2 {
+  background: conic-gradient(
+    #30d5c8,
+    #ffc324,
+    #ff7f50,
+    #30d5c8
+  );
+  filter: blur(16px);
+}
+
+.circle3 {
+  background: conic-gradient(
+    #30d5c8,
+    #ffc324,
+    #ff7f50,
+    #30d5c8
+  );
+  filter: blur(64px);
+}
+@media screen and (max-width: 768px) {
+  .carder {
+    border: 1px solid #30d5c8;
+  }
+  .circle,
+  .circle2,
+  .circle3 {
+    width: 290px;
+    height: 290px;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.conic-gradient {
+  background: conic-gradient(
+    #30d5c8,
+    #ffc324,
+    #ff7f50,
+    #30d5c8
+  );
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.1px);
+  -webkit-backdrop-filter: blur(11.1px);
+  border: 1px solid rgba(255, 255,  255,  0.45);
+}
+.glassmorphism2 {
+  background: #f9fafab9;
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-inButtons {
+  0%,
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-inBottom {
+  0%,
+  75% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes fade-inTop {
+  0%,
+  75% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animacionInferior {
+  animation: fade-inBottom 3s ease-in-out;
+}
+.animacionInferiorTexto {
+  animation: fade-inBottom 4s ease-in-out;
+}
+.animacionSuperiorTexto {
+  animation: fade-inTop 4s ease-in-out;
+}
+.animacionCirculo {
+  animation: fade-in 2s ease-in-out;
+}
+.animacionBotones {
+  animation: fade-inButtons 4s ease-in-out;
+}
