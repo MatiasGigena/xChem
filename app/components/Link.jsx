@@ -13,7 +13,12 @@ const index = ({ data, index }) => {
       initial='initial'
       className='relative flex items-center h-20'
     >
-      <Link href={data.href}>{data.title}</Link>
+      <Link
+        className='text-[40px] lg:text-[56px]'
+        href={data.href}
+      >
+        {data.title}
+      </Link>
     </motion.div>
   );
 };

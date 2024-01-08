@@ -12,7 +12,7 @@ const Contact = () => {
         <div className='circle3'></div>
       </div>
       <div className='z-20 flex flex-col items-center justify-center gap-4'>
-        <h1 className='text-[#303036] text-[26px]  text-center lg:text-[72px]'>
+        <h1 className='text-[#303036] text-[26px] font-medium lg:font-normal text-center lg:text-[72px]'>
           Your Pathway Begins Here
         </h1>
         <p className=' text-[18px] lg:text-[24px] text-[#303036]  max-w-[700px] text-center'>

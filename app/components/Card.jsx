@@ -35,7 +35,7 @@ const Card = ({
   return (
     <div
       ref={container}
-      className='h-screen mt-[150px] lg:mt-[50px] p-8 lg:p-0 flex justify-center items-center sticky top-10 lg:top-0'
+      className='h-screen mt-[50px] p-8 lg:p-0 flex justify-center items-center sticky top-10 lg:top-0'
     >
       <motion.div
         className={`h-[600px] lg:w-[1000px] lg:h-[500px] relative top-[-25%] flex flex-col p-[50px] origin-top rounded-[25px] ${color} shadow-lg`}

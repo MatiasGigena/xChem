@@ -1,5 +1,4 @@
 import Button from './ButtonGrad';
-import 'animate.css';
 
 const Hero = () => {
   return (
