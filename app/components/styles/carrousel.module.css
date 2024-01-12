@@ -45,7 +45,7 @@
   animation: scroll 40s linear infinite;
   display: flex;
   width: calc(250px * 14);
-  gap: 0px;
+  gap: 60px;
 }
 
 .slider .slide {

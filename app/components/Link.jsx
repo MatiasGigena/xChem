@@ -14,7 +14,7 @@ const index = ({ data, index }) => {
       className='relative flex items-center h-20'
     >
       <Link
-        className='text-[40px] lg:text-[56px]'
+        className='text-[40px] lg:text-[45px]'
         href={data.href}
       >
         {data.title}

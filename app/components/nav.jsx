@@ -10,11 +10,11 @@ const Nav = () => {
   };
 
   return (
-    <nav className='w-full animacionInferior glassmorphism2 fixed  z-50  pl-8 pr-16 py-5 lg:pl-64 lg:pr-72 lg:py-10'>
+    <nav className='w-full animacionInferior glassmorphism2 fixed  z-50 pl-4 sm:pl-8 pr-16 py-5 lg:pl-64 lg:pr-72 lg:py-10'>
       <ul className=' text-3xl h-full flex justify-between items-center'>
-        <li className='text-[#303036] flex items-center justify-center gap-2'>
+        <li className='text-[#303036] flex items-center justify-center sm:gap-2'>
           <img
-            src='./images/logoheader.png'
+            src='./images/logoheader.webp'
             alt='logo'
             className='h-12 w-12'
           />

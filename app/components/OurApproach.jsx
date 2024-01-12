@@ -2,7 +2,7 @@
 import Card from './Card';
 import { useScroll } from 'framer-motion';
 import { useRef } from 'react';
-const OurApproach = () => {
+const OurApproach = ({ isMobile }) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -45,11 +45,19 @@ const OurApproach = () => {
   return (
     <section
       id='Approach'
-      className='mt-[10vh] lg:mt-[5vh]'
+      ref={container}
+      className='mt-[10vh] flex flex-col items-center lg:mt-[5vh]'
     >
-      <h1 className='text-center text-[#303036] text-6xl leading-[86px] xxl:text-[100px]'>
-        Our Unique Approach
-      </h1>
+      <div className='flex flex-col items-center gap-7 lg:gap-16'>
+        <h1 className='text-center text-[#303036] text-6xl leading-[86px] xxl:text-[100px]'>
+          Our Unique Approach
+        </h1>
+        <img
+          src='/images/downArrow.svg'
+          alt='arrow'
+          className='h-20 w-20 animate-pulse'
+        />
+      </div>
       {projects.map((project, i) => {
         const targetScale =
           1 - (projects.length - i) * 0.05;
@@ -61,6 +69,7 @@ const OurApproach = () => {
             progress={scrollYProgress}
             range={[i * 0.25, 1]}
             targetScale={targetScale}
+            isMobile={isMobile}
           />
         );
       })}

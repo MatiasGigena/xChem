@@ -8,54 +8,54 @@ const Carrousel = () => {
       <div className={`${style.slideTrack}`}>
         {[...Array(2)].map((_, i) => (
           <React.Fragment key={i}>
-            <div className={style.slide}>
+            <div className={`!w-[150px] ${style.slide}`}>
               <img
-                src='./images/logoheader.png'
+                src='./images/logoheader.webp'
                 alt='logo'
               />
             </div>
             <div className={style.slide}>
               <img
-                src='./logoswhite/norachem.png'
+                src='./logoswhite/norachem.webp'
+                alt='logo'
+                className='object-contain'
+              />
+            </div>
+            <div className={`!w-[150px] ${style.slide}`}>
+              <img
+                src='./images/ChimiaDAO Logo - PNG - By Dcmat.webp'
+                alt='logo'
+              />
+            </div>
+            <div className={style.slide}>
+              <img
+                src='./logoswhite/norachem.webp'
                 alt='logo'
                 className='object-contain'
               />
             </div>
             <div className={style.slide}>
               <img
-                src='./images/logoheader.png'
+                src='./images/DeSci Bogotá Logo - PNG - By Dcmat.webp'
                 alt='logo'
               />
             </div>
             <div className={style.slide}>
               <img
-                src='./logoswhite/norachem.png'
-                alt='logo'
-                className='object-contain'
-              />
-            </div>
-            <div className={style.slide}>
-              <img
-                src='./images/logoheader.png'
-                alt='logo'
-              />
-            </div>
-            <div className={style.slide}>
-              <img
-                src='./logoswhite/norachem.png'
+                src='./logoswhite/norachem.webp'
                 alt='logo'
                 className='object-contain'
               />
             </div>
-            <div className={style.slide}>
+            <div className={`!w-[150px] ${style.slide}`}>
               <img
-                src='./images/logoheader.png'
+                src='./images/ChimiaDAO Logo - PNG - By Dcmat.webp'
                 alt='logo'
               />
             </div>
             <div className={style.slide}>
               <img
-                src='./logoswhite/norachem.png'
+                src='./images/DeSci Bogotá Logo - PNG - By Dcmat.webp'
                 alt='logo'
                 className='object-contain'
               />

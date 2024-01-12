@@ -17,6 +17,7 @@ const Card = ({
   i,
   img,
   subtitle,
+  isMobile,
 }) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -26,7 +27,7 @@ const Card = ({
   const imageScale = useTransform(
     scrollYProgress,
     [0, 1],
-    [2, 1]
+    isMobile ? [1, 1] : [2, 1]
   );
   const scale = useTransform(progress, range, [
     1,
@@ -56,12 +57,19 @@ const Card = ({
               {description}
             </p>
           </div>
-          <div className='relative w-full h-[200px] lg:w-[80%] lg:h-full lg:rounded-[25px] overflow-hidden '>
+          <div className='relative w-full h-full lg:w-[80%] rounded-[25px] overflow-hidden '>
             <motion.div
               style={{ scale: imageScale }}
-              className='h-full w-full'
+              className='h-full w-full relative'
             >
-              <Image fill src={img} className='cover' />
+              <Image
+                fill
+                src={img}
+                alt='imagen2'
+                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw'
+                className='object-cover'
+                priority={true}
+              />
             </motion.div>
           </div>
         </div>

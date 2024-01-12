@@ -6,7 +6,9 @@
   --timing: 400ms;
   --rotation: 20deg;
 }
-
+html {
+  background-color: #f9fafa;
+}
 body {
   margin: 0;
   padding: 0;
@@ -66,7 +68,7 @@ body {
   --angle: 0deg;
   padding: 20px;
   background: linear-gradient(white, white) padding-box,
-    conic-gradient(from var(--angle), #dfdfdf, #20265c)
+    conic-gradient(from var(--angle), #dfdfdf, #2a8eab)
       border-box;
   border: 2px solid transparent;
   border-radius: 16px;
@@ -124,7 +126,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .carder {
-    border: 1px solid #20265c;
+    border: 1px solid #2a8eab;
   }
   .circle,
   .circle2,
