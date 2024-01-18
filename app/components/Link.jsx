@@ -2,10 +2,9 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { slide } from '../animation/anim';
 
-const index = ({ data, index }) => {
+const index = ({ data }) => {
   return (
     <motion.div
-      key={index}
       custom={data.index}
       variants={slide}
       animate='enter'

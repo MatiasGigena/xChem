@@ -39,7 +39,7 @@ const NavItems = () => {
             </p>
           </div>
           {items.map((item, index) => {
-            return <Link data={{ ...item, index }} />;
+            return <Link key={index} data={{ ...item }} />;
           })}
         </div>
       </div>
