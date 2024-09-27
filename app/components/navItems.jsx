@@ -1,8 +1,8 @@
-'use client';
-import { menuSlide } from '../animation/anim';
-import Link from './Link';
-import { motion } from 'framer-motion';
-import CurveComponent from './curve';
+'use client'
+import { menuSlide } from '../animation/anim'
+import Link from './Link'
+import { motion } from 'framer-motion'
+import CurveComponent from './Curve'
 
 const NavItems = () => {
   const items = [
@@ -22,7 +22,7 @@ const NavItems = () => {
       title: 'Contact',
       href: '#Contact',
     },
-  ];
+  ]
   return (
     <motion.div
       variants={menuSlide}
@@ -39,12 +39,12 @@ const NavItems = () => {
             </p>
           </div>
           {items.map((item, index) => {
-            return <Link key={index} data={{ ...item }} />;
+            return <Link key={index} data={{ ...item }} />
           })}
         </div>
       </div>
       <CurveComponent />
     </motion.div>
-  );
-};
-export default NavItems;
+  )
+}
+export default NavItems

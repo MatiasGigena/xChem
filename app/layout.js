@@ -1,6 +1,6 @@
-import Nav from './components/nav';
-import './globals.css';
-import { Poppins } from 'next/font/google';
+import Nav from './components/Nav'
+import './globals.css'
+import { Poppins } from 'next/font/google'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -15,12 +15,12 @@ const poppins = Poppins({
     '800',
     '900',
   ],
-});
+})
 
 export const metadata = {
   title: 'xChem',
   description: 'Chemistry for Everyone',
-};
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -30,5 +30,5 @@ export default function RootLayout({ children }) {
         {children}
       </body>
     </html>
-  );
+  )
 }

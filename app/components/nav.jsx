@@ -1,13 +1,13 @@
-'use client';
-import { useState } from 'react';
-import NavItems from './navItems';
-import { AnimatePresence } from 'framer-motion';
-import 'animate.css';
+'use client'
+import { useState } from 'react'
+import NavItems from './NavItems'
+import { AnimatePresence } from 'framer-motion'
+import 'animate.css'
 const Nav = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false)
   const handleClick = () => {
-    window.scrollTo(0, 0);
-  };
+    window.scrollTo(0, 0)
+  }
 
   return (
     <nav className='w-full animacionInferior glassmorphism2 fixed  z-50 pl-4 sm:pl-8 pr-16 py-5 lg:pl-64 lg:pr-72 lg:py-10'>
@@ -38,6 +38,6 @@ const Nav = () => {
         {isActive && <NavItems />}
       </AnimatePresence>
     </nav>
-  );
-};
-export default Nav;
+  )
+}
+export default Nav
